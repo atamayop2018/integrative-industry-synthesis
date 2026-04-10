@@ -1,0 +1,7 @@
+{
+  "records": 240,
+  "positive_rate": 0.367,
+  "test_accuracy": 0.85,
+  "test_roc_auc": 0.888,
+  "high_or_critical_share": 0.246
+}
