@@ -6,7 +6,7 @@ __pycache__/
 .DS_Store
 # C extensions
 *.so
-
+.env.example
 # Distribution / packaging
 .Python
 build/
@@ -168,6 +168,10 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Project-specific
+data/
+*.gguf
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
