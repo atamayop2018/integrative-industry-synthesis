@@ -10,7 +10,7 @@
   "models": {
     "logistic_regression": {
       "metrics": {
-        "test_accuracy": 0.6767,
+        "test_accuracy": 0.6766,
         "test_precision": 0.1825,
         "test_recall": 0.5285,
         "test_f1": 0.2713,
@@ -18,8 +18,8 @@
       },
       "confusion": [
         [
-          12248,
-          5357
+          12247,
+          5358
         ],
         [
           1067,
