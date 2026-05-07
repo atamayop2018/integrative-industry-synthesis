@@ -1,7 +1,60 @@
 {
-  "records": 240,
-  "positive_rate": 0.367,
-  "test_accuracy": 0.85,
-  "test_roc_auc": 0.888,
-  "high_or_critical_share": 0.246
+  "dataset": "UCI Diabetes 130-US Hospitals (1999-2008)",
+  "records_total": 99340,
+  "records_train": 79472,
+  "records_test": 19868,
+  "positive_rate_overall": 0.1139,
+  "positive_rate_test": 0.1139,
+  "selected_model": "random_forest",
+  "high_or_critical_share": 0.15,
+  "models": {
+    "logistic_regression": {
+      "metrics": {
+        "test_accuracy": 0.6767,
+        "test_precision": 0.1825,
+        "test_recall": 0.5285,
+        "test_f1": 0.2713,
+        "test_roc_auc": 0.6655
+      },
+      "confusion": [
+        [
+          12248,
+          5357
+        ],
+        [
+          1067,
+          1196
+        ]
+      ]
+    },
+    "random_forest": {
+      "metrics": {
+        "test_accuracy": 0.6904,
+        "test_precision": 0.1914,
+        "test_recall": 0.5329,
+        "test_f1": 0.2816,
+        "test_roc_auc": 0.6711
+      },
+      "confusion": [
+        [
+          12510,
+          5095
+        ],
+        [
+          1057,
+          1206
+        ]
+      ]
+    }
+  },
+  "llm_layer": {
+    "backend": "openai",
+    "model": "gpt-4o-mini",
+    "shortlist_size": 10,
+    "tools": [
+      "education_reminder",
+      "nurse_outreach",
+      "physician_review"
+    ]
+  }
 }
